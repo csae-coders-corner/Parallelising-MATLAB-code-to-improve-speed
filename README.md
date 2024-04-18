@@ -1,4 +1,7 @@
+![CC Graphics 2024_ParallelisingMATLAB](https://github.com/csae-coders-corner/Parallelising-MATLAB-code-to-improve-speed/assets/148211163/e0579481-dd69-4272-8eea-07cadcf13207)
+
 # Parallelising-MATLAB-code-to-improve-speed
+
 Parallelising splits the operations contained within a piece of code and sends it to multiple processors in your computer. This should speed up computation time as multiple processors execute the code simultaneously. Writing parallelisable code is especially helpful when working with computationally intensive problems. 
 
 In this post, I will focus on transforming a for loop to a parfor loop in MATLAB. The parfor loop will execute all the statements contained in the loop body in parallel, unlike in the for loop where each iteration must wait its turn. Parfor is contained in the Parallel Computing Toolbox. As an example, I will show how parallelising code can be useful if we wish to solve a cost minimisation for several firms and aim to improve the speed of computation. See Fernández-Villaverde and Valencia (2018) for other applications of parallel computing to economics, such as value function iteration.
